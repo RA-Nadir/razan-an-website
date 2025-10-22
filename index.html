@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <title>HOME | Razan A.N.</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-white nav-fixed w-full">
+      <div class="shadow-xl mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute rounded-md p-2 hover:bg-emerald-200"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg text-sm font-inter rounded-lg max-w-[120px] p-5 top-full"
+            >
+              <ul>
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="flex group-hover:text-slate-500 rounded-lg"
+                    >Beranda</a>
+                </li>
+
+                <li class="group">
+                  <a
+                    href="#experience"
+                    class="flex group-hover:text-slate-500 rounded-lg"
+                    >Pengalaman</a>
+                </li>
+
+                <li class="group">
+                  <a
+                    href="#portfolio"
+                    class="flex group-hover:text-slate-500 rounded-lg"
+                    >Portfolio</a>
+                </li>
+
+                <li class="group">
+                  <a
+                    href="#footer"
+                    class="flex group-hover:text-slate-500 rounded-lg"
+                    >Kontak</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div
+            class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+          >
+            <div class="flex flex-shrink-0 items-center mx-auto">
+              <h1 class="font-caveat font-bold lg:text-2xl">
+                Razan <span class="text-slate-400">A.N.</span>
+              </h1>
+            </div>
+            <div class="hidden sm:mx-auto sm:block rounded-md bg-linear-to-r from-slate-600 to-slate-400 p-1">
+              <div class="flex space-x-4 font-spacegrotesk">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a
+                  href="#home"
+                  class="text-slate-50 hover:underline hover:decoration-double px-3 py-2 text-sm font-medium"
+                  aria-current="page"
+                  >Beranda</a
+                >
+                <a
+                  href="#experience"
+                  class="text-slate-50 hover:underline hover:decoration-double px-3 py-2 text-sm font-medium"
+                  >Pengalaman</a
+                >
+                <a
+                  href="#portfolio"
+                  class="text-slate-50 hover:underline hover:decoration-double px-3 py-2 text-sm font-medium"
+                  >Portfolio</a
+                >
+                <a
+                  href="#footer"
+                  class="text-slate-50 hover:underline hover:decoration-double px-3 py-2 text-sm font-medium"
+                  >Kontak</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- <li class="absolute inset-y-0 right-0 flex items-center pr-3 sm:static sm:inset-auto sm:ml-6">
+            <img class="animate-bounce w-5 h-5" src="images/brightness.png" alt="">
+            <div class="flex pt-2">
+              <img class="w-5" src="images/brightness.png" alt="">
+              <input type="checkbox" class="hidden" id="dark-toggle" />
+              <label class="pr-2 pl-2" for="dark-toggle">
+                <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-400">
+                  <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                </div>
+              </label>
+              <img class="w-5" src="images/night-mode.png" alt="">
+            </div>
+          </li> -->
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-24 lg:pt-44 lg:pb-32">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center lg:w-3/5 px-5 lg:px-28">
+            <h1 class="text-sm font-semibold text-slate-500 lg:text-2xl">
+              <!--Hai Semua! <span class="text-slate-800">Saya</span>-->
+              <span
+                class="block font-spacegrotesk font-semibold text-slate-900 text-xl mt-1 lg:text-4xl"
+                >Razan Aiman Nadir</span
+              >
+            </h1>
+            <h2 class="font-medium text-slate-500 text-xs mb-5 lg:text-2xl">
+              <i>Junior Programmer</i>
+            </h2>
+            <p
+              class="font-inter text-xs lg:text-base text-justify mb-4 lg:mb-10 leading-relaxed"
+            >
+              Lulusan <span class="font-bold">S1 Teknik Informatika</span> dari Universitas Sangga Buana YPKP Bandung.
+              <!--dengan mempelajari keilmuan IT, dengan minat yang berfokus pada bidang <span class="font-bold italic">Web & Android Development</span>.-->
+            </p>
+            <a
+              href="https://www.instagram.com/r.aiman.n"
+              class="inline-block rounded shadow transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110"
+              target="_blank"
+              ><img
+                class="w-5 h-5 lg:w-8 lg:h-8"
+                src="assets/img/icons-ig.png"
+                alt="instagram.png"
+                title="Instagram"
+            /></a>
+            <a
+              href="https://www.linkedin.com/razan-aimann"
+              class="inline-block rounded shadow transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110"
+              target="_blank"
+              ><img
+                class="w-5 h-5 lg:w-8 lg:h-8"
+                src="assets/img/icons-linkedin.png"
+                alt="linkedin.png"
+                title="LinkedIn"
+            /></a>
+            <a
+              href="https://github.com/RA-Nadir"
+              class="inline-block rounded shadow transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110"
+              target="_blank"
+              ><img
+                class="w-5 h-5 lg:w-8 lg:h-8"
+                src="assets/img/github.png"
+                alt="github.png"
+                title="GitHub"
+            /></a>
+          </div>
+          <div class="w-full self-end pt-8 lg:pt-0 lg:pr-16 lg:w-2/5">
+            <div class="relative mt-0 lg:right-0">
+              <img
+                src="assets/img/razan.jpg"
+                alt="razan"
+                class="border-4 border-double border-slate-900 shadow-lg max-w-full mx-auto w-40 lg:w-72"
+              />
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Experience Section Start -->
+    <section id="experience" class="pt-20 lg:pt-36 pb-20 lg:pb-32 lg:m-8">
+      <!--<div class="container">-->
+        <div class="grid grid-cols-1 gap-5 lg:gap-3 lg:grid-cols-3">
+          <figure
+            class="shadow-2xl bg-slate-100 rounded-xl p-5 lg:p-8 md:p-0 mx-auto"
+          >
+            <img
+              class="w-12 h-12 lg:w-24 lg:h-24 rounded-full mx-auto"
+              src="assets/img/education.png"
+              alt=""
+              width="384"
+              height="512"
+            />
+            <h1
+              class="font-spacegrotesk text-slate-600 font-bold mt-2 lg:text-2xl text-center"
+            >
+              Education
+            </h1>
+            <div class="pt-4 lg:pt-6 text-center md:text-left space-y-4">
+              <figcaption class="font-medium">
+                <div class="font-spacegrotesk font-bold text-xs lg:text-base">
+                  SMK WIRAKARYA 1 CIPARAY
+                </div>
+                <div
+                  class="font-spacegrotesk text-xs lg:text-sm text-slate-700 dark:text-slate-500"
+                >
+                  Teknik Komputer & Jaringan
+                </div>
+                <p class="lg:text-base font-thin text-xs">2016-2019</p>
+              </figcaption>
+              <figcaption class="font-medium">
+                <div class="font-spacegrotesk font-bold text-xs lg:text-base">
+                  UNIVERSITAS SANGGA BUANA YPKP BANDUNG
+                </div>
+                <div
+                  class="font-spacegrotesk text-xs lg:text-sm text-slate-700 dark:text-slate-500"
+                >
+                  S1 Teknik Informatika
+                </div>
+                <p class="text-xs lg:text-base font-thin">2019-2023</p>
+              </figcaption>
+            </div>
+          </figure>
+
+          <figure
+            class="shadow-2xl bg-slate-100 rounded-xl p-4 lg:p-8 mx-auto"
+          >
+            <img
+              class="w-12 h-12 lg:w-24 lg:h-24 rounded-full mx-auto"
+              src="assets/img/certi.png"
+              alt=""
+              width="384"
+              height="512"
+            />
+            <h1
+              class="font-spacegrotesk text-slate-600 font-bold mt-2 lg:text-2xl text-center"
+            >
+              Certification
+            </h1>
+
+            <figure
+              class="lg:flex bg-slate-100 rounded-xl mt-5 lg:mt-0 pt-2"
+            >
+              <img
+                class="w-8 h-8 lg:w-12 lg:h-12 mx-auto lg:my-auto"
+                src="assets/img/microsoft.png"
+                alt=""
+                width="384"
+                height="512"
+              />
+              <div class="pt-6 p-3 left-0">
+                <blockquote>
+                  <p class="text-xs lg:text-sm font-medium">
+                    Microsoft Office Specialist
+                  </p>
+                  <div
+                    class="font-inter text-xs lg:text-sm text-teal-600"
+                  >
+                    Excel Associate
+                  </div>
+                  <div
+                    class="text-xs lg:text-sm text-slate-700"
+                  >
+                    2023
+                  </div>
+                  <a
+                    href="https://drive.google.com/file/d/1ErGRxO6cJTXSqgAzDK4pzGjfTG7eXMSA/view?usp=drive_link"
+                    class="text-xs pt-1 text-sky-500 hover:text-sky-700"
+                    target="_blank"
+                    >
+                      Certificate
+                  </a>
+                </blockquote>
+              </div>
+            </figure>
+          </figure>
+
+          <figure
+            class="shadow-2xl bg-slate-100 rounded-xl p-4 lg:p-8 w-72 lg:w-96 mx-auto"
+          >
+            <img
+              class="w-12 h-12 lg:w-24 lg:h-24 rounded-full mx-auto"
+              src="assets/img/publication.png"
+              alt=""
+              width="384"
+              height="512"
+            />
+            <h1
+              class="font-spacegrotesk text-slate-600 font-bold mt-2 lg:text-2xl text-center"
+            >
+              Journal Publication
+            </h1>
+              <div class="pt-5 p-3 left-0">
+                <blockquote>
+                  <p class="text-xs text-center lg:text-sm font-medium">
+                    Sistem Prediksi Harga Emas Berdasarkan Data <i>Time Series</i>
+                    Menggunakan Metode <i>Artificial Neural Network</i> (ANN)
+                  </p>
+                  <div class="text-xs lg:text-sm font-thin font pt-2">
+                    <h1><i>Published Date</i>: 2023-09-26</h1>
+                    <h2 class="pt-1">
+                    <i>Author </i>:
+                      <span class="block"
+                        >● Razan Aiman Nadir
+                        <span class="block">● Rini Nuraini Sukmana</span></span
+                      >
+                    </h2>
+                  </div>
+                  <a
+                    href="https://jurnal.itscience.org/index.php/digitech/article/view/2877"
+                    class="text-xs pt-1 text-sky-500 hover:text-sky-700"
+                    target="_blank"
+                  >
+                    Baca Artikel
+                  </a>
+                </blockquote>
+              </div>
+            </figure>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <!-- Experience Section End -->
+
+    <!-- Portfolio Section Start -->
+    <section id="portfolio" class="pt-12 pb-14 lg:pt-16 lg:pb-20 bg-linear-to-r from-teal-400 to-slate-500">
+      <!--<div class="container">-->
+        <div class="w-full lg:px-4">
+          <div class="max-w-xl mx-auto text-center lg:mb-12">
+            <h4
+              class="font-bold text-lg lg:text-4xl mb-2"
+            >
+              PORTFOLIO
+            </h4>
+          </div>
+        </div>
+        <div
+          class="w-full lg:px-2 pt-4 flex flex-wrap justify-center lg:w-10/12 lg:mx-auto"
+        >
+          <div class="mb-12 pt-2 lg:p-4 w-1/2 lg:w-1/4">
+            <button class="w-40 lg:w-56 pt-3 pb-5 ml-16 lg:ml-5 rounded-lg shadow-lg overflow-hidden border-double border-4 border-b-blue-950 hover:bg-emerald-200">
+              <img src="assets/img/web.png" alt=" " class="w-24 lg:w-36 mx-auto" />
+              <h3
+                class="font-semibold font-spacegrotesk text-sm text-center lg:text-lg text-black mt-5"
+              >
+                Web Development
+              </h3>
+              <a href="/portfolioweb.html" class="text-xs lg:text-sm p-4 text-sky-700 hover:text-slate-900">
+                Selengkapnya >
+              </a>
+            </button>
+          </div>
+          <div class="mb-12 pt-2 lg:p-4 w-1/2 lg:w-1/4">
+            <button class="w-44 lg:w-56 pt-3 pb-5 rounded-lg shadow-lg overflow-hidden border-double border-4 border-blue-950 hover:bg-emerald-200">
+              <img src="assets/img/smartphone.png" alt=" " class="w-24 lg:w-36 mx-auto" />
+              <h3
+                class="font-semibold font-spacegrotesk text-sm text-center lg:text-lg text-black mt-5"
+              >
+                Android Development
+              </h3>
+              <a href="/portfolioandroid.html" class="text-xs lg:text-sm p-4 text-sky-700 hover:text-slate-900">
+                Selengkapnya >
+              </a>
+            </button>
+          </div>
+          <!-- <div class="mb-12 lg:p-4 w-1/2 lg:w-1/4">
+            <div class="w-40 md:w-56 pt-3 pb-5 rounded-lg shadow-lg overflow-hidden border-double border-4 border-emerald-400 hover:bg-emerald-200">
+              <img src="images/video-editing-app.png" alt=" " class="w-24 lg:w-36 mx-auto" />
+              <h3
+                class="font-semibold font-spacegrotesk text-sm text-center lg:text-lg text-black mt-5"
+              >
+                Video Editing
+              </h3>
+              <a href="/portfoliovideoediting" class="text-xs lg:text-sm p-4 text-sky-500 hover:text-sky-700 dark:text-slate-500">
+                Selengkapnya >
+              </a>
+            </div>
+          </div> -->
+
+          <!-- <div class="mb-12 lg:p-4 w-1/2 lg:w-1/4">
+            <div class="w-40 md:w-56 pt-3 pb-5 rounded-lg shadow-lg overflow-hidden border-double border-4 border-emerald-400 hover:bg-emerald-200">
+              <img src="images/graphic-design.png" alt=" " class="w-24 lg:w-36 mx-auto" />
+              <h3
+                class="font-semibold font-spacegrotesk text-sm lg:text-lg text-black mt-5 text-center mx-auto"
+              >
+                Graphic Design
+              </h3>
+              <a href="/portfoliographicdesign" class="text-xs lg:text-sm p-4 text-sky-500 hover:text-sky-700 dark:text-slate-500 mx-auto">
+                Selengkapnya >
+              </a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+    <!-- Footer Start -->
+    <footer id="footer" class="bg-black pt-16 lg:pt-24 pb-12">
+      <!--<div class="container">-->
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-12 text-slate-200 font-medium lg:w-1/3">
+            <h2
+              class="font-caveat font-bold lg:text-3xl text-center lg:pr-8 mb-2"
+            >
+              Razan <span class="text-slate-400">A.N.</span>
+            </h2>
+          </div>
+          <div class="w-full px-4 mb-12 text-slate-200 font-medium lg:w-1/3">
+            <h3 class="mb-2 font-spacegrotesk font-bold text-sm lg:text-base">Kontak</h3>
+            <p class="font-inter text-xs lg:text-sm pb-3">aimanrazan5@gmail.com</p>
+            <a
+              href="https://www.instagram.com/r.aiman.n"
+              class="inline-block rounded shadow bg-white hover:bg-teal-500"
+              target="_blank"
+              ><img
+                class="w-5 h-5 md:w-6 md:h-6"
+                src="assets/img/icons-ig.png"
+                alt="instagram.png"
+            /></a>
+            <a
+              href="https://www.facebook.com/razan.aimannadir"
+              class="inline-block rounded shadow bg-white hover:bg-teal-500"
+              target="_blank"
+              ><img
+                class="w-5 h-5 md:w-6 md:h-6"
+                src="assets/img/icons-linkedin.png"
+                alt="linkedin.png"
+            /></a>
+            <a
+              href="https://github.com/RA-Nadir"
+              class="inline-block rounded shadow bg-white hover:bg-teal-500"
+              target="_blank"
+              ><img
+                class="w-5 h-5 md:w-6 md:h-6"
+                src="assets/img/github.png"
+                alt="github.png"
+            /></a>
+          </div>
+          <div class="w-full px-4 mb-12 text-slate-200 font-medium lg:w-1/3">
+            <h3 class="font-spacegrotesk font-bold mb-2 text-sm lg:text-base">Tautan</h3>
+            <ul>
+              <li>
+                <a
+                  href="#home"
+                  class="font-inter text-xs lg:text-sm hover:text-teal-500"
+                  >Beranda</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a
+                  href="#experience"
+                  class="font-inter text-xs lg:text-sm hover:text-teal-500"
+                  >Pengalaman</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a
+                  href="#portfolio"
+                  class="font-inter text-xs lg:text-sm hover:text-teal-500"
+                  >Portfolio</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a
+                  href="#kontak"
+                  class="font-inter text-xs lg:text-sm hover:text-teal-500"
+                  >Kontak</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full pt-10 border-t border-slate-600">
+          <h1 class="text-center font-spacegrotesk text-xs lg:text-sm text-white">
+            <a href="https://instagram.com/r.aiman.n" class="text-slate-400 hover:text-emerald-300">Razan Aiman Nadir</a> | 2025
+          </h1>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

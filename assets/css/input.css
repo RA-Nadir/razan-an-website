@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-caveat: "Caveat", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-spacegrotesk: "Space Grotesk", sans-serif;
+  --font-bogle: "BBH Sans Bogle", sans-serif;
+}
+
+.nav-fixed {
+    @apply fixed z-[9999];
+}
+
+.hamburger-line {
+    @apply w-[21px] h-[3px] my-1 block bg-black;
+}
+
+.hamburger-active > span:nth-child(1) {
+    @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+    @apply -rotate-45;
+}
+
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 9999;
+    transition: 0.8s;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
+    background: rgba(0, 0, 0, 0.8);
+    right: 0;
+    bottom: 0;
+}
+
+.overlay img {
+    max-height: 100%;
+}
+
+.overlay:target img {
+    animation: animasi 1s;
+}
+
+@keyframes animasi {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.overlayvideo {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 9999;
+    transition: 0.8s;
+}
+
+.overlayvideo:target {
+    width: auto;
+    height: auto;
+    background: rgba(0, 0, 0, 0.8);
+    right: 0;
+    bottom: 0;
+}
+
+#dark-toggle:checked ~ label div.toggle-circle {
+    @apply translate-x-5;
+}
+
+.animate-bounce {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
